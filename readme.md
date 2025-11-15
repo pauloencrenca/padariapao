@@ -41,7 +41,6 @@ O site inclui um menu responsivo simples e estilos que melhoram o uso em telas m
 
 📸 Prévia
 
-(Se quiser, depois você coloca uma foto aqui do seu site)
 
 👨‍💻 Desenvolvido por
 
