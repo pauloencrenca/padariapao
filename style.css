@@ -1,0 +1,465 @@
+/* ============================
+   RESET GERAL
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    transition: 0.25s ease;
+}
+
+body {
+    background-color: #fff9ec;
+    color: #4a3d2c;
+    padding-bottom: 80px;
+}
+
+
+/* ============================
+   HEADER MODERNO
+============================ */
+header {
+    background: linear-gradient(135deg, #f7d99e, #f1c37a);
+    padding: 25px;
+    text-align: center;
+    color: #402d17;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+
+/* ============================
+   MENU MODERNO
+============================ */
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3a2a14;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 8px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+nav a:hover {
+    background-color: #ffe0a8;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* ============================
+   MAIN COM IMAGEM DE FUNDO
+============================ */
+main {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-image: url("imagem/pao.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 250, 240, 0.7);
+    backdrop-filter: blur(3px);
+    z-index: 0;
+}
+
+main > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ============================
+   DETAILS MODERNOS
+============================ */
+details {
+    margin: 20px 0;
+    padding: 18px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.55);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+    cursor: pointer;
+}
+
+summary {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+details:hover {
+    transform: scale(1.02);
+}
+
+details p {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+
+/* ============================
+   LISTAS
+============================ */
+li {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+
+/* ============================
+   CARDS (caso use produtos.html)
+============================ */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(10px);
+    padding: 18px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+
+/* ============================
+   FORM (contato.html)
+============================ */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    margin: 10px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbbba2;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #b48742;
+    box-shadow: 0 0 8px rgba(180,135,66,0.5);
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: #c28c3a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a8742a;
+}
+
+
+/* ============================
+   ÍCONES SOCIAIS MODERNOS
+============================ */
+.btn-social {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 24px;
+    margin: 10px;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.instagram { background: #d6249f; }
+.whatsapp { background: #25D366; }
+
+.btn-social:hover {
+    transform: scale(1.18);
+}
+
+
+/* ============================
+   FOOTER MODERNO
+============================ */
+footer {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #3a2d16;
+    font-weight: bold;
+    box-shadow: 0 -3px 12px rgba(0,0,0,0.15);
+}
+/* ============================
+   RESPONSIVIDADE
+============================ */
+
+/* Telas até 900px (tablets) */
+@media (max-width: 900px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    nav a {
+        padding: 8px 14px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    details {
+        padding: 15px;
+    }
+
+    summary {
+        font-size: 18px;
+    }
+
+    li, details p {
+        font-size: 15px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Telas até 600px (celulares) */
+@media (max-width: 600px) {
+
+    header {
+        padding: 18px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+
+    main {
+        padding: 20px;
+        background-attachment: scroll; /* melhora no celular */
+    }
+
+    details {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    summary {
+        font-size: 17px;
+    }
+
+    li, details p {
+        font-size: 14px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn-social {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 12px;
+    }
+}
+
+/* Telas muito pequenas (até 400px) */
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* ============================
+   MENU HAMBÚRGUER (APENAS MOBILE)
+============================ */
+
+.menu-btn {
+    display: none; /* só aparece no celular */
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #f3d9a4;
+    padding: 10px 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.menu-btn i {
+    font-size: 22px;
+    color: #4a3d2c;
+}
+
+/* NAV fechado no celular */
+@media (max-width: 700px) {
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 4px 0 12px rgba(0,0,0,0.25);
+        transition: 0.35s ease;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    /* NAV aberto */
+    nav.nav-open {
+        left: 0;
+    }
+
+    /* Botão aparece */
+    .menu-btn {
+        display: block;
+    }
+}
